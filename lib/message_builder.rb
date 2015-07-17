@@ -31,7 +31,7 @@ class MessageBuilder
       @alert = @alert + present(title, n)
       @old_pull_requests << pull_request if rotten?(pull_request)
     end
-    @alert = "AAAAAAARGH! #{these} #{pr_plural} not been updated in over 2 days.\n\n" + @alert + "\n\n Remember each time you time you forget to review your pull requests, a baby seal dies."
+    @alert = "AAAAAAARGH! #{these} #{pr_plural} not been updated in over 2 days. :rage1: :rage2: :rage3: :rage4:\n\n" + @alert + "\n\n Remember each time you time you forget your pull requests, a baby seal dies. :informative_seal:"
   end
 
   def rotten?(pull_request)

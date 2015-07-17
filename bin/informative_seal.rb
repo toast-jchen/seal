@@ -11,10 +11,10 @@ git = GithubFetcher.new(CONFIG["members"],CONFIG["repos"])
 
 list = git.list_pull_requests
 
-message_builder = MessageBuilder.new(list)
+message_builder = MessageBuilder.new(list, "informative")
 
-message = message_builder.build
+message = message_builder.informative
 
-slack = SlackPoster.new(ENV["SLACK_WEBHOOK"], CONFIG["channel"], "Informative")
+slack = SlackPoster.new(ENV["SLACK_WEBHOOK"], CONFIG["channel"], "informative")
 
 slack.send_request(message)

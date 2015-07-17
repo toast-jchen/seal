@@ -7,7 +7,7 @@ require './lib/slack_poster'
     let(:webhook_url)      { ENV["SLACK_WEBHOOK"]                              }
     let(:team_channel)     { "#angry-seal-bot-test"                            }
     let(:message)          { "test running!"                                   }
-    let(:mood)             { "Informative"                                     }
+    let(:mood)             { "angry"                                     }
     let(:slack_poster)     { SlackPoster.new(webhook_url, team_channel, mood ) }
 
     context "send_request" do
