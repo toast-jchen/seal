@@ -2,16 +2,13 @@
 
 core-formats:
   members:
-    - binaryberry
-    - boffbowsh
-    - fofr
-    - gpeng
-    - mgrassotti
-    - nickcolley
-    - andrewgarner
+    - chanceattoast
+    - hcjackson-toast
+    - mkressirer
+    - toast-jchen
 
   channel:
-    "#core-formats"
+    "#scale"
 
   exclude_titles:
     - "[DO NOT MERGE]"
